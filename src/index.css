@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background: black;
+  color: white;
+}
+.card{
+  background-color: rgb(31, 29, 29);
+  width:250px;
+}
+@media (max-width: 530px) {
+  /* Adjust the width of your content or elements */
+  .card {
+    width: 200px; /* This will make the container take up the full width */
+  }
+}
+@media (max-width: 424px) {
+  /* Adjust the width of your content or elements */
+  .card {
+    width: 150px;
+    height: 380px;
+    justify-content: space-around;
+     /* This will make the container take up the full width */
+  }
+  .search{
+    margin-right: 0px;
+    padding-top: 5px;
+    width: 100px;
+    margin-left: 0px;
+  }
+  .loginBtn{
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+.review{
+  background-color: rgb(19, 15, 15);
 }
